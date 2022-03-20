@@ -34,7 +34,7 @@ La diversidad biológica se distribuye por la Tierra según una serie de patrone
 + Heterogeneidad ambiental. Se ha comprobado que los lugares más heterogéneos desde un punto de vista ambiental (más cambios en las condiciones climáticas, por ejemplo), albergan más diversidad.
 + Dureza ambiental. En multitud de ocasiones se ha comprobado que los lugares sometidos a más perturbaciones o más fuentes de estrés, tienen menos diversidad biológica.
 
-[Este](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/main/biblio/biodiversity_patterns.pdf) artículo describe con detalle estos patrones y algunos más. 
+[Este](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/2019_2020/biblio/biodiversity_patterns.pdf) artículo describe con detalle estos patrones y algunos más. 
 
 Este ejercicio está relacionado con la identificación de alguno de estos patrones en Andalucía.
 
@@ -46,7 +46,7 @@ Como recordarás, tuvimos una sesion de prácticas en la que elaboramos un mapa 
 
 
 
-<img src="https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/main/imagenes/esquema_consultas_diversidad.png" alt="Shannon" style="zoom:27%;" />
+<img src="https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/2019_2020/imagenes/esquema_consultas_diversidad.png" alt="Shannon" style="zoom:27%;" />
 
 
 
@@ -72,7 +72,7 @@ En esta tarea tienes que trabajar con un mapa de biodiversidad de toda Andalucí
 
 La imagen inferior muestra el mapa del índice de Shannon que obtuvimos en la práctica.
 
-![Shannon sinfonevada](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/main/imagenes/shannon_snev_sinfonevada.png)
+![Shannon sinfonevada](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/2019_2020/imagenes/shannon_snev_sinfonevada.png)
 
 Tenemos pocos puntos para identificar patrones espaciales en la distribución de la biodiversidad. Únicamente se observa que en las zonas ocupadas por pinares de repoblación (zona norte) hay menos diversidad. Eso se debe a que dichas formaciones vegetales albergan pocas especies por lo general.
 
@@ -80,19 +80,19 @@ Tenemos pocos puntos para identificar patrones espaciales en la distribución de
 
 Sin embargo GBIF tiene miles de puntos de ocurrencia de especies (de fauna y flora) en Sierra Nevada. GBIF es una infraestructura de investigación que se encarga de digitalizar y representar en un mapa cuando es posible la información contenida en colecciones biológicas de todo el mundo. En la actualidad tienen miles de millones de registros y se han convertido en una referencia para los investigadores que trabajan con biodiversidad. A través de la web de esta infraestructura se pueden descargar libremente los datos. Para hacer este ejercicio usé datos de toda Andalucía. Los puntos con presencia de especies se pueden ver en la siguiente imagen (son 11.4 millones de registros). Hay tantos, que apenas se distinguen.
 
-![Puntos GBIF](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/main/imagenes/occurrences_gbif.png)
+![Puntos GBIF](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/2019_2020/imagenes/occurrences_gbif.png)
 
 
 
 El mapa de biodiversidad que usaremos en este ejercicio se ha obtenido a partir de esta capa de puntos. Cada punto representa la presencia de una especie, así que para calcular el índice de Shannon se necesita un marco espacial determinado. En esta ocasión se ha usado una malla regular de 250 m de lado. La imagen inferior muestra unas cuantas de estas celdas, así como los puntos de ocurrencia de especies que contienen.
 
-![grid](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/main/imagenes/grid.png)
+![grid](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/2019_2020/imagenes/grid.png)
 
 
 
-Tras aplicar las instrucciones SQL que vimos en prácticas, se obtiene un mapa de biodiversidad de toda Andalucía a escala de 250 m que puedes descargar [aquí](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/main/geoinfo/H_250.tif). La imagen de abajo muestra la distribución espacial de la biodiversidad en Andalucía según este mapa.
+Tras aplicar las instrucciones SQL que vimos en prácticas, se obtiene un mapa de biodiversidad de toda Andalucía a escala de 250 m que puedes descargar [aquí](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/2019_2020/geoinfo/H_250.tif). La imagen de abajo muestra la distribución espacial de la biodiversidad en Andalucía según este mapa.
 
-![shannon 250m](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/main/imagenes/shannon_250.png)
+![shannon 250m](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/2019_2020/imagenes/shannon_250.png)
 
 ## Tareas a realizar
 
@@ -108,7 +108,7 @@ La idea es que los estudiantes aúnen lo aprendido en teoría sobre biodiversida
 
 Observa con atención el mapa que ves abajo. Muestra el índice Shannon de todos los espacios pertenecientes a la Red Natura 2000 en Andalucía. Todos tienen un índice de Shannon alto, aunque hay diferencias importantes entre unos y otros. En la zona marcada como A en el mapa están los espacios situados en Sierra Morena. En la zona B están aquellas zonas protegidas ubicadas en las montañas Béticas. Se observa que la zona A parece tener una diversidad menor que la B. Se trata solo de una apreciación visual. Para constatarlo numéricamente deberíamos de aplicar un test estadístico. Pero supongamos que esta apreciación es correcta. ¿A qué crees que se debe este patrón espacial de distribución de la diversidad?, ¿Por qué los espacios protegidos de Sierra Morena parecen tener menos diversidad que los de las montañas Béticas?. Reflexiona sobre ello y responde las preguntas. Piensa en los patrones espaciales que determinan la distribución de la biodiversidad que comentamos en teoría (y que se comentan en el apartado de contextualización ecológica de este documento). A modo de pista, te sugiero que pienses en las diferencias de relieve que hay entre ambas zonas. 
 
-![natura Shannon](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/main/imagenes/shannon_natura_label.png)
+![natura Shannon](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/2019_2020/imagenes/shannon_natura_label.png)
 
 #### ¿Gradiente de diversidad de oeste a este en Andalucía oriental?
 
@@ -116,9 +116,9 @@ Ahora observa con detenimiento la siguiente imagen. Representa la distribución 
 
 
 
-![shannon sureste](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/main/imagenes/shannon_sureste_250_label.png)
+![shannon sureste](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/2019_2020/imagenes/shannon_sureste_250_label.png)
 
-Glups, [aquí](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/main/imagenes/precipitacion_sureste_label.png) he dejado olvidada una pista.
+Glups, [aquí](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/2019_2020/imagenes/precipitacion_sureste_label.png) he dejado olvidada una pista.
 
 
 
