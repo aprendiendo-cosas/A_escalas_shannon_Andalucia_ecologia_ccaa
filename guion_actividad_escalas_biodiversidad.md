@@ -49,18 +49,18 @@ Me puse a trabajar y calculé el índice de Shannon para toda Sierra Nevada (a e
 
 Primero descargué de GBIF todos los datos de presencia de especies de Andalucía.  Esto supone trabajar con una base de datos de 11.448.644 registros. Abajo puedes ver la densidad de puntos de presencia de especies según GBIF en nuestra región.
 
-<img src="https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/2024_2025/imagenes/occurrences_gbif.png" alt="Puntos GBIF" style="zoom:50%;" />
+<img src="https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/blob/2024_2025/imagenes/occurrences_gbif.png?raw=true" alt="Puntos GBIF" style="zoom:50%;" />
 
 A partir de estos datos obtuve dos mapas de distribución del índice de Shannon. En cada uno de ellos la referencia espacial era diferente:
 ***
 #### Mapa de diversidad a escala de comunidad
 Consideré que el tamaño medio de una comunidad ecológica en Andalucía eran unos 250 m. Dividí todo el territorio en cuadrículas de ese tamaño y apliqué el script (programa) de R que vimos en la práctica.  La siguiente imagen muestra la malla anterior y los puntos de presencia de especies. 
 
-<img src="https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/2024_2025/imagenes/grid.png" alt="grid" style="zoom:50%;" />
+<img src="https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/blob/2024_2025/imagenes/grid.png" alt="grid" style="zoom:50%;" />
 
 El resultado (tras dos días de procesamiento) se puede ver en la imagen de abajo. Y [aquí](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/2024_2025/geoinfo/H_250.tif) puedes descargar la capa en formato raster (para que ocupe menos espacio)
 
-<img src="https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/2024_2025/imagenes/shannon_250.png" alt="shannon 250m" style="zoom:50%;" />
+<img src="https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/blob/2024_2025/imagenes/shannon_250.png" alt="shannon 250m" style="zoom:50%;" />
 
 #### Mapa de diversidad a escala de paisaje
 
@@ -68,7 +68,7 @@ También apliqué el script de R anterior a la red de espacios protegidos de And
 
 A continuación puedes ver el resultado. También puedes descargarlo [aquí](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/2024_2025/geoinfo/H_natura.tif) en formato raster:
 
-<img src="https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/2024_2025/imagenes/shannon_natura_label.png" alt="natura Shannon" style="zoom:100%;" />
+<img src="https://raw.githubusercontent.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/2024_2025/imagenes/shannon_natura_label.png" alt="natura Shannon" style="zoom:100%;" />
 
 ***
 
@@ -78,7 +78,7 @@ Los mapas anteriores muestran diferentes patrones en la distribución espacial d
 + Otro buen ejemplo de esta discrepancia entre el significado de la diversidad a las dos escalas consideradas es el Parque Natural de Cabo de Gata (extremo suroriental de Andalucía, en la costa). Observa cómo las comunidades de esa zona tienen una diversidad baja (es una zona semidesértica donde la vida es dura...). Sin embargo, la diversidad del espacio en su conjunto es muy alta (aparece coloreado de azul en el mapa).
 + Las impresiones anteriores se pueden cuantificar fácilmente. Podemos comparar la diversidad promedio de las comunidades de cada espacio protegido con el índice de Shannon que recibe dicho espacio si lo calculamos a escala de paisaje. Los resultados se pueden ver en la siguiente tabla:
 
-<img src="https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/raw/2024_2025/imagenes/tabla_diversidades.jpg" alt="tabla_diversidad" style="zoom:70%;" />
+<img src="https://raw.githubusercontent.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/2024_2025/imagenes/tabla_diversidades.jpg" alt="tabla_diversidad" style="zoom:70%;" />
 
 En definitiva, la escala espacial a la que se realice el cálculo del índice de Shannon condiciona los resultados obtenidos. Es decir, no es lo mismo calcular el índice de Shannon a escala de comunidad que hacerlo a escala de paisaje. De hecho, en los ejemplos que hemos visto los resultados son opuestos. Los lugares que tienen comunidades muy diversas suelen tener baja diversidad a escala de paisaje... ¿por qué ocurrirá esto?
 
