@@ -107,7 +107,10 @@ Contesta a las preguntas anteriores razonando todo lo que puedas. El objetivo es
 
 Es muy importante que expliques cómo has llegado a tu respuesta y que incorpores las referencias bibliográficas que has leído para llegar a tu respuesta. También será muy útil para tí que describas los erroes que cometes o los pasos que das para intentar responder a la pregunta. Recuerda, aprendemos de los errores que cometemos. Tómate tu tiempo para entregar esta actividad. La fecha límite es la misma que la del trabajo de prácticas. Puedes entregarme versiones de lo que vayas preparando acompañadas de preguntas concretas para que yo pueda orientarte.
 
-Deberás subir las respuestas a [este](https://www.turnitin.com/assignment/type/tool/launch?cid=50845645&ut=student&lang=es) enlace en formato **word**, **libre office** o equivalente. No en formato **pdf**, por favor.
+Deberás subir las respuestas a [este](https://www.turnitin.com/assignment/type/tool/launch?cid=50845645&ut=student&lang=es) enlace en formato **word**, **libre office** o equivalente. No en formato **pdf**, por favor. Si al acceder a ese enlace os piden algo de información, ahí va lo que tenéis que introducir:
+
+- Nombre de la clase: *Ecología CCAA 2025-2026*
+- Clave: *nokey*
 
 Este ejercicio supone un 10% de la nota. No es mucho, pero para mí es importante porque me ayudará a conocer vuestro estilo de escritura y la forma en la que os enfrentáis a un problema complejo. Poned el foco en el aprendizaje y seguro que conseguís el punto.
 
