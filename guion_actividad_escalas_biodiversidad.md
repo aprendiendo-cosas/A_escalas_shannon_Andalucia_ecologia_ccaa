@@ -54,7 +54,7 @@ Primero descargué de GBIF todos los datos de presencia de especies de Andalucí
 
 A partir de estos datos obtuve dos mapas de distribución del índice de Shannon. En cada uno de ellos la referencia espacial era diferente:
 ***
-#### 3.1 Mapa de diversidad a escala de comunidad
+### 3.1 Mapa de diversidad a escala de comunidad
 Consideré que el tamaño medio de una comunidad ecológica en Andalucía eran unos 250 m. Dividí todo el territorio en cuadrículas de ese tamaño y apliqué el script (programa) de R que vimos en la práctica.  Podía haber usado los polígonos de un mapa de vegetación como hemos hecho en prácticas, pero la malla de 250 m era más rápida de procesar para toda Andalucía. La siguiente imagen muestra la malla anterior y los puntos de presencia de especies. 
 
 <img src="https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/blob/2025_2026/imagenes/grid.png?raw=true" alt="grid" style="zoom:50%;" />
@@ -63,7 +63,7 @@ El resultado (tras dos días de procesamiento) se puede ver en la imagen de abaj
 
 ![andalucia](https://github.com/aprendiendo-cosas/A_escalas_shannon_Andalucia_ecologia_ccaa/blob/2025_2026/imagenes/shannon_250.png?raw=true)
 
-#### 3.2 Mapa de diversidad a escala de paisaje
+### 3.2 Mapa de diversidad a escala de paisaje
 
 También apliqué el script de R anterior a la red de espacios protegidos de Andalucía. Es decir, calculé la diversidad de cada espacio protegido: diversidad a escala de paisaje. En este caso cada espacio protegido recibe un único valor del índice de Shannon. Se calcula computando las abundancias relativas de todas las especies presentes en ese espacio protegido. Es como si consideráramos que cada espacio protegido es una única comunidad. Sabemos que no lo es en realidad, pero también sabemos que los organismos que viven en un espacio protegido comparten más relaciones e intercambios genéticos que los que viven en dos territorios alejados. Así que el símil no es tan descabellado.
 
